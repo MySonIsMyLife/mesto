@@ -1,0 +1,6 @@
+.element__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: baseline;
+    padding: 25px 15px 31px 21px; 
+}

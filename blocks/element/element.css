@@ -1,0 +1,11 @@
+.element {
+    border-radius: 10px;
+    background-color: white;
+    width: 282px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 780px) {
+    .element {
+        margin: 0 auto;
+    }    
+}
