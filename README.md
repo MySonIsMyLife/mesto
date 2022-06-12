@@ -1,17 +1,31 @@
 # Проект: Место
 
+___
+
 ### Обзор
+* Описание проекта
+* Использованные технологии
+* Ссылка на GithubPages
 
-* Figma
-* Картинки
+**Описание проекта**
 
-**Figma**
+Данный проект выполнен в рамках обучающего курса __Яндекс.Практикум__. Проект затрагивает основные базовые и расширенные возможности HTML и CSS, а также новую тему __Базовый JavaScript и работа с браузером__.
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+___
 
-**Картинки**
+**Использованные тенологии**
 
-Доставать картинки предстоит из Фигмы. Это расхожая практика, поэтому полезно потренироваться.
-Не забудьте [оптимизировать картинки](https://tinypng.com/), чтобы ваш сайт загружался быстрее.
+- Display: flex;
+    - flex-direction, jusitfy-content, align-self, align-items, flex-wrap etc.
+- Display: grid:
+    - grid-template-areas, grid-template-column, grid-template-rows, gap-column, gup-row, gup etc.
+- Динамическое масштабирвание элементов для max-width, font-size, padding, margin.
+- Основы и синтаксис JavaScript.
 
-Удачи!
+
+
+___
+
+**Ссылка на GithubPages**
+
+___https://mysonismylife.github.io/mesto/___
