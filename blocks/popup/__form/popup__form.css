@@ -1,12 +1,13 @@
 .popup__form {
-    margin: 0 auto;
-    padding-bottom: 37px;
     display: flex;
     flex-direction: column;
-}
-
-@media screen and (max-width: 500px) {
-    .popup__form {
-        padding-bottom: 25px;
-    }
+    gap: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    outline: none;
 }

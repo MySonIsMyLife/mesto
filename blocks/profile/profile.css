@@ -6,11 +6,10 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
     .profile {
         flex-direction: column;
         gap: 36px;
         margin-bottom: 36px;
-        
     }
 }
