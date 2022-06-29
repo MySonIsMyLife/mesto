@@ -1,11 +1,15 @@
-.element {
+.element__item {
     border-radius: 10px;
     background-color: white;
     width: 282px;
+    height: 361px;
+    position: relative;
+    counter-reset: list;
+    list-style-type: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 780px) {
-    .element {
+    .element__item {
         margin: 0 auto;
     }    
 }

@@ -24,66 +24,54 @@
                 </div>
                 <button class="profile__add-button" type="button"></button>
             </section>
-            <section class="elements">
-                <article class="element">
-                    <img src="./images/Карачаевск.jpg" alt="Карачаевск" class="element__image">
-                    <div class="element__wrapper">
-                        <h2 class="element__title">Карачаевск</h2>
-                        <button class="element__like-button" type="button"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img src="./images/Эльбрус.jpg" alt="Эльбрус" class="element__image">
-                    <div class="element__wrapper">
-                        <h2 class="element__title">Гора Эльбрус</h2>
-                        <button class="element__like-button" type="button"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img src="./images/Домбай.jpg" alt="Домбай" class="element__image">
-                    <div class="element__wrapper">
-                        <h2 class="element__title">Домбай</h2>
-                        <button class="element__like-button" type="button"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img src="./images/Эльбрус.jpg" alt="Эльбрус" class="element__image">
-                    <div class="element__wrapper">
-                        <h2 class="element__title">Гора Эльбрус</h2>
-                        <button class="element__like-button" type="button"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img src="./images/Домбай.jpg" alt="Домбай" class="element__image">
-                    <div class="element__wrapper">
-                        <h2 class="element__title">Домбай</h2>
-                        <button class="element__like-button" type="button"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img src="./images/Карачаевск.jpg" alt="Карачаевск" class="element__image">
-                    <div class="element__wrapper">
-                        <h2 class="element__title">Карачаево-Черкессия</h2>
-                        <button class="element__like-button" type="button"></button>
-                    </div>
-                </article>
-            </section>
+            <ul class="initialCards">
+
+            </ul>    
         </main>
         <footer class="footer">
             <p class="footer__copyright">© 2022 Mesto Russia</p>
         </footer>
-        <div class="popup">
-            <div class="popup__container">
-                <button class="popup__close" type="button"></button>
-                <h2 class="popup__title">Редактировать профиль</h2>
-                <form class="form" name="form">
-                    <input class="form__input form__input_data_name" type="text" name="input-name" required placeholder="Ваше имя">
-                    <input class="form__input form__input_data_job" type="text" name="input-job" required placeholder="Ваша профессия">
-                    <button class="popup__submit-button" type="submit">Сохранить</button>
+        <div class="popup popup_edit">
+            <div class="popup__container popup__container_edit">
+                <button class="popup__close popup__close_edit" type="button"></button>
+                <h2 class="popup__title popup__title_edit">Редактировать профиль</h2>
+                <form class="popup__form popup__form_edit" name="form">
+                    <input class="popup__input popup__input_data_name" type="text" name="input-name" required placeholder="Ваше имя">
+                    <input class="popup__input popup__input_data_job" type="text" name="input-job" required placeholder="Ваша профессия">
+                    <button class="popup__submit-button popup__submit-button_edit" type="submit">Сохранить</button>
                 </form> 
             </div> 
-       </div> 
+       </div>
+       <div class="popup popup_add">
+            <div class="popup__container popup__container_add">
+                <button class="popup__close popup__close_add" type="button"></button>
+                <h2 class="popup__title popup__title_add">Новое место</h2>
+                <form class="popup__form popup__form_add" name="form">
+                    <input class="popup__input popup__input_data_title" type="text" name="input-title" required placeholder="Название">
+                    <input class="popup__input popup__input_data_link" type="text" name="input-link" required placeholder="Ссылка на картинку">
+                    <button class="popup__submit-button popup__submit-button_add" type="submit">Создать</button>
+                </form>
+            </div>
+       </div>
+       <div class="popup__pictures">
+            <div class="popup__body">
+                <button class="popup__close popup__close_pictures" type="button"></button>   
+                <img src="" class="popup__image" alt="Картинка">
+                <h2 class="popup__name" type="text" name="name"></h2>
+            </div> 
+        </div> 
    </div>
+   </div>
+   <template class="element-template">
+        <li class="element__item">
+            <button class="element__delete-button" type="button"></button>
+            <img src="" class="element__image" alt="">
+            <div class="element__wrapper">
+                <h2 class="element__title" type="text"></h2>
+                <button class="element__like-button" type="button"></button>
+            </div>
+        </li>
+    </template>  
    <script src="./scripts/index.js"></script>
 </body>
 </html>
