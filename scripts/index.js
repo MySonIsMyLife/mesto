@@ -99,17 +99,17 @@ function addNewCard(name, link) {
     const cardElement = cardTemplate.cloneNode(true); // docuemnt something
     cardElement.querySelector('.element__title').textContent = name;
    
-    let cardImg = cardElement.querySelector('.element__image');
+    const cardImg = cardElement.querySelector('.element__image');
     cardImg.src = link;
     cardImg.addEventListener('click', function() {
         popUpImgOpen(name, link);
     })
 
-    let likeButton = cardElement.querySelector('.element__like-button');
+    const likeButton = cardElement.querySelector('.element__like-button');
     likeButton.addEventListener('click', function() {
         likeButton.classList.toggle('element__like-button_active');
     })
-    let deleteButton = cardElement.querySelector('.element__delete-button');
+    const deleteButton = cardElement.querySelector('.element__delete-button');
     deleteButton.addEventListener('click', (evt) => {
         cardList.removeChild(evt.target.parentNode);
     })
