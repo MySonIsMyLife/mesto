@@ -9,8 +9,6 @@
     outline: none;
 }
 
-
-
 .popup__input:focus {
     border: 1px solid #7fc7ff;
 }

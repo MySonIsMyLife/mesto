@@ -141,14 +141,15 @@ function closeImagePopup () {
     closePopup(popupImage);
 };
 
+// функция закрытия Esc
 function closeEscPopup (event) {
     if (event.key === 'Escape') {
-        const popup = document.querySelector('.popup__opened')
-        console.log(popup) 
+        const popup = document.querySelector('.popup__opened') 
         closePopup(popup);
 }
 };
 
+//функция закрытия с мышки
 function closeMousePopup (event) {
     if (event.target.classList.contains('popup__opened')|| event.target.classList.contains('popup__close')) {
         const popup = document.querySelector('.popup__opened') 
@@ -163,15 +164,25 @@ function openPopup(popup) {
 };
 
 function closePopup(popup) {
-    resetForm(popup, config);
     popup.classList.remove('popup__opened');
 };
 
-function resetForm(popup) {
-    const errors = Array.from(popup.querySelectorAll('.popup__input-error'));
+function resetForm(popup, config) {
+    const errors = Array.from(popup.querySelectorAll(`.${config.inputErrorClass}`));
+    const button = popup.querySelector(config.submitButtonSelector);
+    const inputs = Array.from(popup.querySelectorAll(config.inputSelector));
+
+    if (button) {
+        button.disabled = true;
+        button.classList.add(config.inactiveButtonClass);
+    }
+
     errors.forEach((error) => {
-        error.classList.remove('popup__input-error_active')
-        
+        error.classList.remove(config.errorClass); 
+    })
+
+    inputs.forEach((input) => {
+        input.value = '';
     })
 }
 

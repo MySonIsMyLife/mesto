@@ -9,17 +9,15 @@ const config = {
 };
 
 //показ ошибки
-const showInputError = (formElement, inputElement, errorMessage, { inputErrorClass, errorClass }) => {
+const showInputError = (formElement, inputElement, errorMessage, { errorClass }) => {
     const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
-    inputElement.classList.add(inputErrorClass);
     errorElement.textContent = errorMessage;
     errorElement.classList.add(errorClass);
 };
 
 //скрытие ошибки
-const hideInputError = (formElement, inputElement, { inputErrorClass, errorClass }) => {
+const hideInputError = (formElement, inputElement, { errorClass }) => {
 const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
-inputElement.classList.remove(inputErrorClass);
 errorElement.classList.remove(errorClass);
 errorElement.textContent = '';
 };
